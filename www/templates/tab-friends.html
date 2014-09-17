@@ -1,0 +1,9 @@
+<ion-view title="Links">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="link in links" type="item-text-wrap" href="#/tab/friend/{{link.id}}">
+        {{link.name}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
