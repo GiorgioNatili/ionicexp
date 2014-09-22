@@ -8,6 +8,7 @@
 angular.module('sociallife', ['ionic', 'sociallife.controllers', 'sociallife.services'])
 
 .run(function($ionicPlatform) {
+
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -23,6 +24,7 @@ angular.module('sociallife', ['ionic', 'sociallife.controllers', 'sociallife.ser
 
 .config(function($stateProvider, $urlRouterProvider) {
 
+
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
@@ -37,7 +39,6 @@ angular.module('sociallife', ['ionic', 'sociallife.controllers', 'sociallife.ser
     })
 
     // Each tab has its own nav history stack:
-
     .state('tab.dash', {
       url: '/dash',
       views: {
@@ -48,31 +49,22 @@ angular.module('sociallife', ['ionic', 'sociallife.controllers', 'sociallife.ser
       }
     })
 
-    .state('tab.friends', {
-      url: '/friends',
+    .state('tab.news', {
+      url: '/news',
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/tab-friends.html',
-          controller: 'FriendsCtrl'
-        }
-      }
-    })
-    .state('tab.friend-detail', {
-      url: '/friend/:friendId',
-      views: {
-        'tab-friends': {
-          templateUrl: 'templates/friend-detail.html',
-          controller: 'FriendDetailCtrl'
+        'tab-news': {
+          templateUrl: 'templates/tab-news.html',
+          controller: 'NewsCtrl'
         }
       }
     })
 
-    .state('tab.account', {
-      url: '/account',
+    .state('tab.commissariato', {
+      url: '/commissariato',
       views: {
-        'tab-account': {
-          templateUrl: 'templates/tab-account.html',
-          controller: 'AccountCtrl'
+        'tab-commissariato': {
+          templateUrl: 'templates/tab-commissariato.html',
+          controller: 'CommissariatoCtrl'
         }
       }
     });

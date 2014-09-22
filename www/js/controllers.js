@@ -1,15 +1,16 @@
 angular.module('sociallife.controllers', [])
 
 .controller('DashCtrl', function($scope) {
+
 })
 
-.controller('FriendsCtrl', function($scope, Links) {
+.controller('NewsCtrl', function($scope, Links) {
   $scope.links = Links.all();
 })
 
-.controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-  $scope.friend = Friends.get($stateParams.friendId);
+.controller('NewsDetailCtrl', function($scope, $stateParams, Links) {
+  $scope.friend = Links.get($stateParams.friendId);
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('CommissariatoCtrl', function($scope) {
 });

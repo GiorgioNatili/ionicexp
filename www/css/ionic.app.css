@@ -7797,17 +7797,76 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   -webkit-transition: none !important;
   transition: none !important; }
 
-.facebook {
-  background: url('../img/facebook.png') no-repeat;
-  background-size: 100% 100%; }
+.iconItem, .facebook, .youtube, .news, .truck, .commissariato {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  line-height: 120px;
+  height: 120px; }
 
-.dashboard {
-  background-color: green; }
-  .dashboard .button {
-    line-height: -webkit-calc(300px - 200px);
-    line-height: -moz-calc(300px - 200px);
-    line-height: calc(300px - 200px);
-    /*
-    line-height: 80px;
-    */
-    background-color: red; }
+.facebook {
+  background-image: url('../img/facebook.png'); }
+
+.youtube {
+  background-image: url('../img/youtube.png'); }
+
+.news {
+  background-image: url('../img/news.png'); }
+
+.truck {
+  background-image: url('../img/truck.png'); }
+
+.commissariato {
+  background-image: url('../img/commissariato.png'); }
+
+.app-background {
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-image: url('../img/bg_left.png'); }
+
+.background-item, .bg-right {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.bg-right {
+  float: right;
+  background-position: right;
+  background-image: url('../img/bg_right.png'); }
+
+.app-header {
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.shifted-down {
+  position: absolute;
+  width: 100%;
+  top: 150px;
+  margin-top: 20px; }
+
+#logo {
+  width: 50%;
+  float: left;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  background-image: url('../img/logo.png'); }
+
+#app-logo {
+  width: 50%;
+  float: right;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-image: url('../img/logo_app.png'); }
