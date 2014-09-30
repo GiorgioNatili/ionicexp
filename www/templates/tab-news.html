@@ -5,12 +5,12 @@
         <div id="app-logo"></div>
     </div>
     <ion-list class = 'shifted-down'>
-      <ion-item ng-repeat="link in links" type="item-text-wrap" href="#/tab/news/{{link.id}}">
-        {{link.name}}
+      <ion-item ng-repeat="item in news" type="item-text-wrap" href="#/tab/news/details/{{item.id}}">
+        {{item.name}}
       </ion-item>
     </ion-list>
   </ion-content>
     <div class="app-background">
-        <div class="bg-right"></div>
+        <div id="bg-right"></div>
     </div>
 </ion-view>

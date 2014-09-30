@@ -59,12 +59,22 @@ angular.module('sociallife', ['ionic', 'sociallife.controllers', 'sociallife.ser
       }
     })
 
-    .state('tab.commissariato', {
-      url: '/commissariato',
+    .state('tab.news-detail', {
+      url: '/news/details/:newsId',
       views: {
-        'tab-commissariato': {
-          templateUrl: 'templates/tab-commissariato.html',
-          controller: 'CommissariatoCtrl'
+        'tab-news-detail': {
+           templateUrl: 'templates/news-detail.html',
+           controller: 'NewsDetailCtrl'
+        }
+      }
+    })
+
+    .state('tab.truck', {
+      url: '/truck',
+      views: {
+        'tab-truck': {
+          templateUrl: 'templates/tab-truck.html',
+          controller: 'TruckCtrl'
         }
       }
     });

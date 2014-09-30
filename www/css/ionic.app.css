@@ -7820,7 +7820,7 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   background-image: url('../img/commissariato.png'); }
 
 .app-background {
-  height: 400px;
+  height: 300px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -7829,13 +7829,13 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   background-repeat: no-repeat;
   background-image: url('../img/bg_left.png'); }
 
-.background-item, .bg-right {
+.background-item, #bg-right {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: contain; }
 
-.bg-right {
+#bg-right {
   float: right;
   background-position: right;
   background-image: url('../img/bg_right.png'); }

@@ -9,18 +9,18 @@
 
         <div class="shifted-down">
         <div class="button-bar">
-            <a class="button button-icon facebook"></a>
-            <a class="button button-icon youtube"></a>
+            <a ng-click="openURL('facebook')" class="button button-icon facebook"></a>
+            <a ng-click="openURL('youtube')" class="button button-icon youtube"></a>
             <a class="button button-icon news"></a>
         </div>
 
         <div class="button-bar">
             <a class="button button-icon truck"></a>
-            <a class="button button-icon icon commissariato"></a>
+            <a ng-click="openURL('commissariato')" class="button button-icon icon commissariato"></a>
         </div>
         </div>
     </ion-content>
     <div class="app-background">
-        <div class="bg-right"></div>
+        <div id="bg-right"></div>
     </div>
 </ion-view>
