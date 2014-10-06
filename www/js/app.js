@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('sociallife', ['ionic', 'sociallife.controllers', 'sociallife.services'])
+angular.module('sociallife', ['ionic', 'sociallife.controllers', 'sociallife.services', 'sociallife.directives'])
 
 .run(function($ionicPlatform) {
 
@@ -62,9 +62,9 @@ angular.module('sociallife', ['ionic', 'sociallife.controllers', 'sociallife.ser
     .state('tab.news-detail', {
       url: '/news/details/:newsId',
       views: {
-        'tab-news-detail': {
-           templateUrl: 'templates/news-detail.html',
-           controller: 'NewsDetailCtrl'
+        'tab-truck': {
+          templateUrl: 'templates/tab-news-detail.html',
+          controller: 'NewsDetailCtrl'
         }
       }
     })

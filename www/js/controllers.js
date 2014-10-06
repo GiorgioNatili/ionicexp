@@ -1,7 +1,9 @@
 angular.module('sociallife.controllers', ['ionic'])
 
-.controller('DashCtrl', function($scope, $ionicPopup) {
+.controller('DashCtrl', function($scope, $ionicPopup, $ionicNavBarDelegate) {
 
+    $scope.hideBackButton = true;
+    
     var URLS = {
 
         facebook:       'https://www.facebook.com/unavitadasocial?fref=ts',
@@ -32,13 +34,37 @@ angular.module('sociallife.controllers', ['ionic'])
 })
 
 .controller('NewsCtrl', function($scope, News) {
+
+  $scope.hideBackButton = false;
   $scope.news = News.all();
+
+})
+
+.controller('BackBarCtrl', function($scope, $ionicNavBarDelegate){
+
+  $scope.goBack = function() {
+    
+      $ionicNavBarDelegate.back();
+  
+    };
+
 })
 
 .controller('NewsDetailCtrl', function($scope, $stateParams, News) {
-        alert('controller')
-  $scope.news = News.get($stateParams.id);
+
+  $scope.item = News.get($stateParams.newsId);
+
+  $scope.openDetails = function($event){
+    
+    $event.preventDefault();
+    window.open($event.currentTarget.attributes.href.value, '_blank', 'location=no');
+
+  };
+  
 })
 
 .controller('TruckCtrl', function($scope) {
+
+  $scope.hideBackButton = false;
+
 });

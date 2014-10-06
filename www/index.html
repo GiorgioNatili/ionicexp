@@ -23,14 +23,19 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
+    <script src="js/directives.js"></script>
+
+    <!-- External Libraires -->
+    <script src="lib/vendors/Animate.js"></script>
+    <script src="lib/vendors/Scroller.js"></script>
+
   </head>
   <body ng-app="sociallife" animation="slide-left-right-ios7">
     <!-- 
       The nav bar that will be updated as we navigate between views.
     -->
-    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
-      <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
-        Back
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7" ng-controller="BackBarCtrl">
+      <ion-nav-back-button class="button-icon icon ion-arrow-left-c" ng-click="goBack()" ng-hide="hideBackButton">
       </ion-nav-back-button>
     </ion-nav-bar>
 
