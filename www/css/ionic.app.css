@@ -7820,7 +7820,8 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   background-image: url('../img/commissariato.png'); }
 
 .app-background {
-  height: 300px;
+  height: 30%;
+  min-height: 120px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -7841,22 +7842,19 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   background-image: url('../img/bg_right.png'); }
 
 .app-header {
-  height: 150px;
+  height: 18%;
   width: 100%;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 44px; }
 
 .shifted-down {
-  position: absolute;
-  width: 100%;
-  top: 150px;
-  margin-top: 20px; }
+  padding-top: 30%; }
 
 #logo {
   width: 50%;
   float: left;
-  height: 150px;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -7865,7 +7863,7 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
 #app-logo {
   width: 50%;
   float: right;
-  height: 150px;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -7873,25 +7871,28 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
 
 #news-detail {
   position: absolute;
-  top: 170px; }
+  top: 5px; }
 
 #news-detail span {
   float: right; }
 
 #truck-content {
-  position: fixed;
+  position: absolute;
   display: inline;
   right: 0;
   left: 0;
-  top: 150px;
-  bottom: 45px;
-  -webkit-transform-origin: 0 0;
-  margin-top: 45px; }
+  top: 0;
+  -webkit-transform-origin: 0 0; }
 
 #truck-container {
   position: fixed;
   display: inline;
-  top: 150px;
   right: 0;
-  bottom: 45px;
   left: 0; }
+
+.nested {
+  font-weight: normal;
+  text-indent: 20px; }
+
+.uber-alles {
+  z-index: 9999 !important; }

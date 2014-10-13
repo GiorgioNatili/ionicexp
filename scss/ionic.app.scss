@@ -22,7 +22,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "../www/lib/ionic/scss/ionic";
 @import 'mixins/mixins';
 
-$header-size: 150px;
+$header-size: 100%;
 $background-size: 300px;
 
 .iconItem{
@@ -83,7 +83,8 @@ $background-size: 300px;
 
 .app-background{
 
-  height: $background-size;
+  height: 30%;
+  min-height: 120px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -114,20 +115,17 @@ $background-size: 300px;
 
 .app-header {
 
-  height: $header-size;
+  height: 18%;
   width: 100%;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 44px;
 
 }
 
 .shifted-down{
 
-  position: absolute;
-  width: 100%;
-  top: $header-size;
-  margin-top: 20px;
+ padding-top: 30%;
 
 }
 
@@ -158,7 +156,7 @@ $background-size: 300px;
 #news-detail{
   
   position: absolute;
-  top: 170px;
+  top: 5px;
 
 }
 
@@ -169,15 +167,13 @@ $background-size: 300px;
 }
 
 #truck-content{
-  
-  position:fixed;
+
+  position:absolute;
   display:inline;
   right:0;
   left:0;
-  top:150px;
-  bottom:45px;
+  top:0;
   -webkit-transform-origin: 0 0;
-  margin-top:45px;
 
 }
 
@@ -185,9 +181,20 @@ $background-size: 300px;
   
   position:fixed;
   display:inline;
-  top:150px;
   right:0;
-  bottom:45px;
   left:0;
+
+}
+
+.nested{
+
+  font-weight: normal;
+  text-indent: 20px;
+
+}
+
+.uber-alles{
+
+  z-index: 9999 !important;
 
 }

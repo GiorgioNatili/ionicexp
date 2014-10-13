@@ -1,15 +1,15 @@
 <ion-view title="News ed Eventi">
-  <ion-content class="padding" has-header="true">
     <div class="app-header">
         <div id="logo"></div>
         <div id="app-logo"></div>
     </div>
-    <ion-list class = 'shifted-down'>
-      <ion-item ng-repeat="item in news" type="item-text-wrap" href="#/tab/news/details/{{item.id}}">
-        {{item.name}}
-      </ion-item>
-    </ion-list>
-  </ion-content>
+    <ion-content class="shifted-down" has-header="true">
+        <ion-list >
+            <ion-item ng-repeat="item in news" type="item-text-wrap" href="#/tab/news/details/{{item.id}}">
+                {{item.name}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
     <div class="app-background">
         <div id="bg-right"></div>
     </div>

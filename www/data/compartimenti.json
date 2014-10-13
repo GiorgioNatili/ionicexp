@@ -1,0 +1,100 @@
+[
+    {
+        "nome":"LAZIO",
+        "province":[
+            {
+                "nome":"Roma",
+                "dipartimenti":[
+                    {
+                        "nome":"ROMA",
+                        "uff":"COMPARTIMENTO POSTALE",
+                        "indirizzo":"VIA ROMA",
+                        "citta":"ROMA",
+                        "telefono":"6585875875",
+                        "email":"info@laziomatica.com"
+                    },
+                    {
+                        "nome":"FROSINONE",
+                        "uff":"COMPARTIMENTO POSTALE",
+                        "indirizzo":"VIA ROMA",
+                        "citta":"ROMA",
+                        "telefono":"6585875875",
+                        "email":"info@laziomatica.com"
+                    },
+                    {
+                        "nome":"LATINA",
+                        "uff":"COMPARTIMENTO POSTALE",
+                        "indirizzo":"VIA ROMA",
+                        "citta":"ROMA",
+                        "telefono":"6585875875",
+                        "email":"info@laziomatica.com"
+                    }
+                ]
+            },
+            {
+                "nome": "Frascati",
+                "dipartimenti": [
+                    {
+                        "nome": "ROMA",
+                        "uff": "COMPARTIMENTO POSTALE",
+                        "indirizzo": "VIA ROMA",
+                        "citta": "ROMA",
+                        "telefono": "6585875875",
+                        "email": "info@laziomatica.com"
+                    },
+                    {
+                        "nome": "FROSINONE",
+                        "uff": "COMPARTIMENTO POSTALE",
+                        "indirizzo": "VIA ROMA",
+                        "citta": "ROMA",
+                        "telefono": "6585875875",
+                        "email": "info@laziomatica.com"
+                    },
+                    {
+                        "nome": "LATINA",
+                        "uff": "COMPARTIMENTO POSTALE",
+                        "indirizzo": "VIA ROMA",
+                        "citta": "ROMA",
+                        "telefono": "6585875875",
+                        "email": "info@laziomatica.com"
+                    }
+                ]
+            }
+
+        ]
+    },
+    {
+        "nome":"Toscana",
+        "province":[
+            {
+                "nome":"Firenze",
+                "dipartimenti":[
+                    {
+                        "nome":"ROMA",
+                        "uff":"COMPARTIMENTO POSTALE",
+                        "indirizzo":"VIA ROMA",
+                        "citta":"ROMA",
+                        "telefono":"6585875875",
+                        "email":"info@laziomatica.com"
+                    },
+                    {
+                        "nome":"FROSINONE",
+                        "uff":"COMPARTIMENTO POSTALE",
+                        "indirizzo":"VIA ROMA",
+                        "citta":"ROMA",
+                        "telefono":"6585875875",
+                        "email":"info@laziomatica.com"
+                    },
+                    {
+                        "nome":"LATINA",
+                        "uff":"COMPARTIMENTO POSTALE",
+                        "indirizzo":"VIA ROMA",
+                        "citta":"ROMA",
+                        "telefono":"6585875875",
+                        "email":"info@laziomatica.com"
+                    }
+                ]
+            }
+        ]
+    }
+]
