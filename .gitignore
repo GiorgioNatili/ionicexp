@@ -6,3 +6,4 @@ platforms/
 .idea/
 *.iml
 *.log
+*.DS_Store
