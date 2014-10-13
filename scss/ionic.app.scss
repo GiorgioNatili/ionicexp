@@ -183,7 +183,16 @@ $background-size: 300px;
   display:inline;
   right:0;
   left:0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
 
+}
+
+#truck .scroll{
+
+  height: 78% !important;
+  
 }
 
 .nested{

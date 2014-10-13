@@ -23,21 +23,22 @@ angular.module('sociallife.directives', [])
                     maxZoom: 2
                 });
 
-                // Initialize scrolling rect
-                var rect = container.getBoundingClientRect();
-                scroller.setPosition(rect.left + container.clientLeft, rect.top + container.clientTop);
-                
                 var image = document.getElementById('image-scrollable');
                 var contentWidth = image.width;
                 var contentHeight = image.height;
+
+                console.log(contentWidth, contentHeight)
+                // Initialize scrolling rect
+                var rect = container.getBoundingClientRect();
+                scroller.setPosition((-contentWidth/2), (-contentHeight/2));
 
                 // Reflow handling
                 var reflow = function() {
                     clientWidth = container.clientWidth;
                     clientHeight = container.clientHeight;
                     scroller.setDimensions(clientWidth, clientHeight, contentWidth, contentHeight);
-                };
 
+                };
 
                 window.addEventListener("resize", reflow, false);
                 reflow();

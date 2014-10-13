@@ -7,10 +7,10 @@
         "id": 0
     },
     {
-        "isActive": false,
+        "isActive": true,
         "link": "http://www.links.news.com",
-        "value": "Laborum pariatur deserunt eu mollit deserunt consectetur fugiat quis. Lorem excepteur est aute laborum esse ea duis laborum. Aliqua labore velit reprehenderit cupidatat. Laboris ea fugiat magna anim adipisicing reprehenderit veniam non cillum in aliquip duis eu.\r\n",
-        "name": "proident",
+        "value": "Laborum pariatur deserunt <img src='img/news.png'> eu mollit deserunt consectetur fugiat quis. Lorem excepteur est aute laborum esse ea duis laborum. Aliqua labore velit reprehenderit cupidatat. Laboris ea fugiat magna anim adipisicing reprehenderit veniam non cillum in aliquip duis eu.\r\n",
+        "name": "IMG",
         "id": 1
     },
     {

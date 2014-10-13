@@ -487,7 +487,7 @@ var Scroller;
 		scrollTo: function(left, top, animate, zoom) {
 
 			var self = this;
-			
+
 			// Stop deceleration
 			if (self.__isDecelerating) {
 				core.effect.Animate.stop(self.__isDecelerating);

@@ -13,13 +13,13 @@
 
       <div id="news-detail">
         <h3>{{item.name}}</h3>
-        <p>
-          {{item.value}}
+        <p ng-bind-html="item.value">
           <br>
-          <span>
+
+        </p>
+        <span>
             <a ng-click="openDetails($event)" href="{{item.link}}">leggi</a>
           </span>
-        </p>
       </div>
   </ion-content>
     <div class="app-background">

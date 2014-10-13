@@ -45,6 +45,7 @@ angular.module('sociallife.services', [])
             } else {
 
                 return function(left, top, zoom) {
+
                     content.style.marginLeft = left ? (-left / zoom) + 'px' : '';
                     content.style.marginTop = top ? (-top / zoom) + 'px' : '';
                     content.style.zoom = zoom || '';
@@ -93,7 +94,7 @@ angular.module('sociallife.services', [])
         
         if(news[i].id == id){
 
-          value = news[id];
+          value = news[i];
           break;
 
         }
