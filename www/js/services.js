@@ -78,7 +78,7 @@ angular.module('sociallife.services', [])
 
       });
 
-      $ionicLoading.hide()
+      $ionicLoading.hide();
 
   });
 
