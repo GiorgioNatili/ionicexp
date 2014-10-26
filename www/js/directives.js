@@ -157,31 +157,25 @@ angular.module('sociallife.directives', [])
       var elWidth = element[0].offsetWidth;
       var elHeight = element[0].offsetHeight;
 
-      // モード（pinch or swipe）
       var mode = '';
 
-      // ピンチ時の2点間の距離
       var distance = 0;
       var initialDistance = 0;
 
-      // 拡大率
       var scale = 1;
       var relativeScale = 1;
       var initialScale = 1;
       var MAX_SCALE = 3;
 
-      // 要素の左上端の座標
       var positionX = 0;
       var positionY = 0;
 
       var initialPositionX = 0;
       var initialPositionY = 0;
 
-      // ピンチ時の中心座標
       var originX = 0;
       var originY = 0;
 
-      // スワイプ時のスタート座標・移動量
       var startX = 0;
       var startY = 0;
       var moveX = 0;
