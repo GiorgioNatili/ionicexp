@@ -24,6 +24,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 $header-size: 100%;
 $background-size: 300px;
+$text-color: #3480b6;
 
 .iconItem{
 
@@ -131,7 +132,8 @@ $background-size: 300px;
 
 #logo{
 
-  width: 50%;
+  width: 46%;
+  margin: 2%;
   float: left;
   height: $header-size;
   background-repeat: no-repeat;
@@ -143,7 +145,8 @@ $background-size: 300px;
 
 #app-logo{
 
-  width: 50%;
+  width: 46%;
+  margin: 2%;
   float: right;
   height: $header-size;
   background-repeat: no-repeat;
@@ -164,6 +167,13 @@ $background-size: 300px;
 
   float: right;
 
+  background-color: $text-color;
+  border-radius: 4px;
+  padding: 4px;
+}
+#news-detail a{
+  color: #ffffff;
+  text-decoration: none;
 }
 
 #truck-content{
@@ -206,4 +216,31 @@ $background-size: 300px;
 
   z-index: 9999 !important;
 
+}
+
+.tabs{
+
+  background-image: none !important;
+  background-color: #ffffff !important;
+  border: none !important;
+  color: $text-color !important;
+}
+
+ion-nav-bar{
+
+  background-color: #ffffff !important;
+  border: none !important;
+  color: $text-color !important;
+  border-color: #ffffff !important;
+
+}
+.bar{
+  border: none !important;
+  border-bottom: none !important;
+}
+ion-nav-bar > h1{
+  color: $text-color !important;
+}
+ion-nav-back-button{
+  color: $text-color !important;
 }
